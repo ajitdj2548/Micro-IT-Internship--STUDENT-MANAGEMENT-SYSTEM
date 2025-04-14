@@ -1,0 +1,78 @@
+/* dashboard.css */
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    padding: 50px 0; /* Add some padding to give space around content */
+    min-height: 100vh; /* Ensure the background covers the whole screen */
+    animation: backgroundAnimation 10s ease infinite; /* Animation for background */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    50% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Another color scheme */
+    }
+    100% {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+}
+
+.card {
+    background-color: #f06;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    animation: fadeIn 1s ease-in-out, cardHover 0.3s ease-in-out; /* Add hover animation */
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cardHover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05); /* Slightly enlarge the card on hover */
+    }
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}

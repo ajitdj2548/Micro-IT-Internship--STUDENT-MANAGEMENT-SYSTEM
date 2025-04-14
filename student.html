@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="student.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Student Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="enrollment.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="student.html" class="nav-link">Add Student</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="grades.html" class="nav-link">Grades</a></li>
+                    <li><a href="communication.html" class="nav-link">Messages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Student Management System</h2>
+                <p>Manage your student records with ease. View, add, and track student details efficiently.</p>
+            </div>
+        </section>
+
+        <section class="student-list-section">
+            <h2>Student List</h2>
+            <input type="text" id="search" class="search-bar" placeholder="Search for students...">
+            <ul id="studentList" class="student-list">
+                <!-- Dynamic student list items will be injected here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Student Management System | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="student.js"></script>
+</body>
+</html>

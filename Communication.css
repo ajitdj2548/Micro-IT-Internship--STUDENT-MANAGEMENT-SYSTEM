@@ -1,0 +1,95 @@
+/* communication.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f7fd, #dbeafe);
+  margin: 0;
+  padding: 0;
+}
+
+textarea#messageBox {
+  width: 80%;
+  padding: 12px 16px;
+  margin: 30px auto 10px;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #9f7aea;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(159, 122, 234, 0.2);
+  resize: vertical;
+  background-color: #fffafc;
+  transition: border-color 0.3s ease;
+}
+
+textarea#messageBox:focus {
+  border-color: #7c3aed;
+  outline: none;
+}
+
+#sendMessage {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #7c3aed, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 30px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+#sendMessage:hover {
+  background: linear-gradient(to right, #ec4899, #8b5cf6);
+  transform: scale(1.05);
+}
+
+.message-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.message-list li {
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  color: white;
+  margin: 10px auto;
+  padding: 14px 20px;
+  border-radius: 12px;
+  width: 80%;
+  font-size: 1rem;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(79, 70, 229, 0.2);
+  position: relative;
+  animation: slideIn 0.4s ease-in-out;
+}
+
+.message-list li button {
+  float: right;
+  background: linear-gradient(to right, #f43f5e, #ec4899);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.message-list li button:hover {
+  background: linear-gradient(to right, #be185d, #9333ea);
+  transform: scale(1.1);
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

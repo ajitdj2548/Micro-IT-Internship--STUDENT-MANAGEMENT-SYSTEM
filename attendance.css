@@ -1,0 +1,33 @@
+/* attendance.css */
+.attendance-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.attendance-list li {
+  background-color: #4a90e2;
+  color: white;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 1rem;
+  text-align: left;
+  animation: slideIn 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out; /* Adds smooth background color transition */
+}
+
+.attendance-list li:hover {
+  background-color: #357ab7; /* Changes background color on hover */
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

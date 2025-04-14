@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Student Management System</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="enrollment.html">Enrollment</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                 <li><a href="student.html">Student</a></li>
+                <li><a href="communication.html">Communication</a></li>
+            </ul>
+        </nav>
+
+        <section id="enrollment">
+            <h2>Student Enrollment</h2>
+            <form id="studentForm" class="form">
+                <input type="text" id="name" placeholder="Student Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="text" id="grade" placeholder="Grade" required>
+                <button type="submit">Add Student</button>
+            </form>
+            <ul id="studentList" class="student-list"></ul>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance Tracking</h2>
+            <ul id="attendanceList" class="attendance-list"></ul>
+        </section>
+
+        <section id="grades">
+            <h2>Grade Management</h2>
+            <ul id="gradeList" class="grade-list"></ul>
+        </section>
+
+        <section id="communication">
+            <h2>Communication</h2>
+            <textarea id="messageBox" placeholder="Message to Parents/Teachers"></textarea>
+            <button id="sendMessage">Send Message</button>
+            <ul id="messageList" class="message-list"></ul>
+        </section>
+    </div>
+    
+    <script src="Main.js"></script>
+</body>
+</html>
